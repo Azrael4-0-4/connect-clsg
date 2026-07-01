@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Connections - Create Account</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#1A1528;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.signup-box{
+
+    width:340px;
+    background:#232136;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+h1{
+    color:#A78BFA;
+    margin-bottom:25px;
+}
+input{
+    width:100%;
+    box-sizing:border-box;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#A78BFA;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.2s;
+}
+button:hover{
+    background:#C4B5FD;
+}
+a{
+    color:#A78BFA;
+    text-decoration:none;
+}
+a:hover{
+    color:#C4B5FD;
+}
+#message{
+    margin-top:15px;
+    color:#90EE90;
+}
+</style>
+</head>
+
+<body>
+
+<div class="signup-box">
+<h1>Create Account</h1>
+
+<input type="text" id="name" placeholder="Full Name">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+<input type="password" id="confirm" placeholder="Confirm Password">
+<button onclick="signup()">Create Account</button>
+
+<p>Already have an account?</p>
+<a href="login.html">Login</a>
+<p id="message"></p>
+</div>
+
+<script>
+function signup(){
+    const password=document.getElementById("password").value;
+    const confirm=document.getElementById("confirm").value;
+    
+    if(password!==confirm){
+        document.getElementById("message").style.color="#ff8080";
+        document.getElementById("message").innerHTML="Passwords do not match.";
+        return;
+    }
+
+    document.getElementById("message").style.color="#90EE90";
+    document.getElementById("message").innerHTML="Account created! (Placeholder)";
+}
+
+</script>
+</body>
+</html>
