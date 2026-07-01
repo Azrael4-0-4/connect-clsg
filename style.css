@@ -235,7 +235,8 @@ hr {
     #6A040F,
     #66ff00
   );
-  color: #F4EAEA;
+  color: #66ff00;
+  /*#F4EAEA*/
   border: 1px solid #9A1D1B;
   border-radius: 10px;
   padding: 8px 14px;
