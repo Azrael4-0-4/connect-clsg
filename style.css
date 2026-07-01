@@ -74,10 +74,7 @@ hr {
 .year-btn,
 .subject-btn,
 #clearFilters {
-  background: linear-gradient(
-    180deg,
-    #302B4A,
-    #242036
+  background: #302B4A
   );
   color: #D6D3E8;
   border: 1px solid #4B456A;
